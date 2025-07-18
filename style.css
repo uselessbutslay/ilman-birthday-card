@@ -1,0 +1,78 @@
+body {
+  background: linear-gradient(to bottom right, #ffe4f0, #ffffff);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  padding: 40px;
+  color: #333;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff99c8;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff66a3;
+}
+
+.hidden {
+  display: none;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.message-line {
+  opacity: 0;
+  transition: opacity 0.8s ease-in;
+}
+
+.message-line.show {
+  opacity: 1;
+}
+
+.heart {
+  font-size: 24px;
+  animation: pulse 1.2s infinite;
+  margin-top: 20px;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); color: #e57373; }
+  50% { transform: scale(1.1); color: #f06292; }
+  100% { transform: scale(1); color: #e57373; }
+}
+
+/* Confetti */
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: #ff99c8;
+  animation: confetti 3s linear infinite;
+  z-index: 999;
+}
+
+@keyframes confetti {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(100vh); }
+}
