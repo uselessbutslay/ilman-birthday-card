@@ -1,45 +1,46 @@
-<div class="container"><!-- SOUND FILES -->
-<audio id="clapSound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_1b7494cc59.mp3" preload="auto"></audio>
-<audio id="booSound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_ba4874b3db.mp3" preload="auto"></audio>
-<audio id="sirenSound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_e8e0b20ec2.mp3" preload="auto"></audio>
-<audio id="birthdaySong" src="https://www.fesliyanstudios.com/play-mp3/387" preload="auto"></audio>
-
-  <button id="startBtn">Start Game</button>
-
-  <div id="gameContent" class="hidden">
-    <h1 class="title">🎈 Happy Birthday Baby 🎈</h1>
-
-    <!-- Soalan 1 -->
-    <div id="question1" class="question">
-      <p>Ilman’s birthday turn?</p>
-      <div class="options">
-        <button class="option">21</button>
-        <button class="option">27</button>
-        <button class="option correct" data-next="question2">28</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Ilman 💗</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <button id="startBtn">🎮 Start Game</button>
+    <div id="gameContent" class="hidden">
+      <h1 class="title">🎈 Happy Birthday, Ilman 🎈</h1>
+      <div id="question1" class="question hidden">
+        <p>Ilman's birthday turn?</p>
+        <div class="options">
+          <button class="option">21</button>
+          <button class="option">27</button>
+          <button class="option correct">28</button>
+        </div>
+      </div>
+      <div id="question2" class="question hidden">
+        <p>Who's Ilman's favourite person?</p>
+        <div class="options">
+          <button class="option">Putri</button>
+          <button class="option">Asya'Kirin</button>
+          <button class="option correct">SAYANGKUUUU</button>
+          <button class="option">Tiger</button>
+        </div>
+      </div>
+      <div id="letterSection" class="hidden">
+        <button id="openLetterBtn">💌 Open Love Letter</button>
+        <div id="letterText" class="hidden"></div>
       </div>
     </div>
-
-    <!-- Soalan 2 -->
-    <div id="question2" class="question hidden">
-      <p>Ilman's fav person?</p>
-      <div class="options">
-        <button class="option">Putri</button>
-        <button class="option">Asya'Kirin</button>
-        <button class="option correct" data-next="loveMessage">SAYANGKUUUU</button>
-        <button class="option">Tiger</button>
-      </div>
-    </div>
-
-    <!-- Surprise message -->
-    <div id="loveMessage" class="hidden">
-      <h2>💌 From Me to You</h2>
-      <div id="messageContainer"></div>
-      <div class="heart">❤️</div>
-    </div>
+    <canvas id="confetti-canvas"></canvas>
+    <!-- Sounds -->
+    <audio id="birthdaySong" src="https://www.fesliyanstudios.com/play-mp3/387" preload="auto" loop></audio>
+    <audio id="clapSound" src="https://www.fesliyanstudios.com/play-mp3/6676" preload="auto"></audio>
+    <audio id="booSound" src="https://www.fesliyanstudios.com/play-mp3/7042" preload="auto"></audio>
+    <audio id="clickSound" src="https://www.fesliyanstudios.com/play-mp3/5955" preload="auto"></audio>
   </div>
-
-  <!-- Audio -->
-  <audio id="clapSound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_1b7494cc59.mp3"></audio>
-  <audio id="booSound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_ba4874b3db.mp3"></audio>
-  <audio id="sirenSound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_e8e0b20ec2.mp3"></audio>
-</div>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
