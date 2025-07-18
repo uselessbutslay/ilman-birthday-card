@@ -1,0 +1,45 @@
+<div class="container"><!-- SOUND FILES -->
+<audio id="clapSound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_1b7494cc59.mp3" preload="auto"></audio>
+<audio id="booSound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_ba4874b3db.mp3" preload="auto"></audio>
+<audio id="sirenSound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_e8e0b20ec2.mp3" preload="auto"></audio>
+<audio id="birthdaySong" src="https://www.fesliyanstudios.com/play-mp3/387" preload="auto"></audio>
+
+  <button id="startBtn">Start Game</button>
+
+  <div id="gameContent" class="hidden">
+    <h1 class="title">🎈 Happy Birthday Baby 🎈</h1>
+
+    <!-- Soalan 1 -->
+    <div id="question1" class="question">
+      <p>Ilman’s birthday turn?</p>
+      <div class="options">
+        <button class="option">21</button>
+        <button class="option">27</button>
+        <button class="option correct" data-next="question2">28</button>
+      </div>
+    </div>
+
+    <!-- Soalan 2 -->
+    <div id="question2" class="question hidden">
+      <p>Ilman's fav person?</p>
+      <div class="options">
+        <button class="option">Putri</button>
+        <button class="option">Asya'Kirin</button>
+        <button class="option correct" data-next="loveMessage">SAYANGKUUUU</button>
+        <button class="option">Tiger</button>
+      </div>
+    </div>
+
+    <!-- Surprise message -->
+    <div id="loveMessage" class="hidden">
+      <h2>💌 From Me to You</h2>
+      <div id="messageContainer"></div>
+      <div class="heart">❤️</div>
+    </div>
+  </div>
+
+  <!-- Audio -->
+  <audio id="clapSound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_1b7494cc59.mp3"></audio>
+  <audio id="booSound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_ba4874b3db.mp3"></audio>
+  <audio id="sirenSound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_e8e0b20ec2.mp3"></audio>
+</div>
